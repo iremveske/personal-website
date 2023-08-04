@@ -1,0 +1,328 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+/*Genel düzen ayarı*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*Html font ayarı*/
+html
+{
+	font-size: 8px;
+}
+/*a etiketi ayarı*/
+a{text-decoration: none;}
+/*Paragraf ayarı*/
+p{
+	padding: 2rem 0;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin: -10px;
+}
+/*görselleri için ayarlama*/
+img{
+	width: 100%;
+	height: auto;
+}
+/*body genel ayarlama*/
+body{
+	
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 1.6rem;
+	line-height: 1.5;
+	text-align: center;
+	background-color: #333;
+	color: #FFFFFF;
+}
+/*menüler için ayarlama*/
+nav{
+	width: 100%;
+	font-family: Montserrat;
+	background-color: #3ef51a;
+	color: #FFF;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	position: fixed;
+	z-index: 500;	
+}
+/*container ayarı*/
+.container{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:.5rem;
+	padding-right:.5rem;	
+}
+/*menü linki ayarı*/
+#nav-links{
+	float:right;
+	font-family: 'Supermercado One', cursive;
+}
+/*menü item ayarı*/
+#nav-links .nav-item{
+	display: inline-block;
+	margin: .5rem;
+}
+/*menü link ayarı*/
+#nav-links .nav-link{
+	color:#FFF;
+	font-size:2rem;
+	font-weight:700;
+	padding:2rem;
+	letter-spacing:.2rem;
+	transition:color 3s;
+}
+/*linkin üstüne gelince renk değiştirme ayarı*/
+#nav-links .nav-link:hover{
+	color:#18bc9c;
+}
+/*logo ayarı*/
+#logo-box .logo{
+	color:#FFF;
+	font-weight:700;
+	font-size:2.5rem;
+	font-family: 'Supermercado One', cursive;
+}
+/*logo ayarı*/
+#logo-box{
+	float: left;
+	padding-left: 30px;
+}
+
+/*header ayarları*/
+header{
+	height: 75rem;
+}
+/*header görsel ayarı*/
+header .bg-image{
+	background-image: url("img/IMG_0056.JPG");
+	height: 75rem;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.4;
+	position: absolute;
+	z-index: -1;
+}
+/*header başlık ayarı*/
+header h1{
+	padding:30rem;
+	padding-bottom: 0;
+	font-size: 45px;
+}
+/*buton ayarı*/
+.btn{
+	background: #333;
+	color: #FFFFFF;
+	border: 1px solid #666;
+	padding: 1.6rem 3.2rem;
+	margin: 5rem 0;
+	display: inline-block;
+	transition: all 0.3s;
+}
+/*butonun üstüne gelince renk değiştirme ayarı*/
+.btn:hover{
+	background-color: #ffffff;
+	color: #333333;
+	
+}
+/*section-a ayarları*/
+#section-a{
+	background-color: #ffffff;
+	color: #333333;
+	padding: 5rem 0;
+}
+
+/*section-b ayarları*/
+#section-b{
+	padding: 2rem;
+	background-color: #b2c6b4;
+}
+/*section-b ul ayarı*/
+#section-b ul{
+	list-style: none;}
+/*section-b liste ayarı*/
+#section-b li{
+	background: #fff;
+	color: rgb(51, 51, 51);
+	margin-bottom: 1.5rem;}
+/*content col ayarı*/
+.col-content{
+	padding: 1.5rem;
+}
+/*h1 etiketi için özel yazı ayarı*/
+.h1yazi
+{
+	font-family: 'Supermercado One', cursive;
+}
+
+/*section-c ayarları*/
+#section-c{
+	background-color: #eaeaea;
+	color: #333333;
+	padding: 3.2rem 0;
+}
+
+/*section-d ayarları*/
+#section-d .box:first-child{
+	background-color: #2690d4;
+}
+/*section-d kutu ayarı*/
+#section-d .box{
+	padding: 5rem;
+}
+
+/*Footer ayarları*/
+footer{
+	padding: 3rem;
+	background: #3ef51a;
+	text-align: left;
+	
+}
+/*Hakkımda kısmı ayarları*/
+.hakkimda2
+{
+	flex: 1;
+}
+
+.hakkimda
+{
+	display: flex;
+	gap: 1rem;
+	padding: 1rem;
+	background-color: white;
+}
+.aciklama
+{
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+}
+
+    /*iletişim kısmı ayarları*/
+   <html lang="tr">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>İletişim Formu</title>
+       <style>
+           body {
+               font-family: Arial, sans-serif;
+               line-height: 1.6;
+           }
+           h1 {
+               text-align: center;
+           }
+           form {
+               max-width: 400px;
+               margin: 0 auto;
+           }
+           label {
+               display: block;
+               margin-bottom: 5px;
+               font-weight: bold;
+           }
+           input, textarea {
+               width: 100%;
+               padding: 8px;
+               margin-bottom: 10px;
+               border: 1px solid #ccc;
+               border-radius: 4px;
+           }
+           button[type="submit"] {
+               background-color: #4CAF50;
+               color: white;
+               padding: 10px 20px;
+               border: none;
+               border-radius: 4px;
+               cursor: pointer;
+           }
+           button[type="submit"]:hover {
+               background-color: #45a049;
+           }
+
+
+       </style>
+   </head>
+
+    .form-group{
+        border-bottom:1px solid #e9ecef;
+        padding-bottom:3rem;
+		background-color: #767978;
+        margin-bottom:4rem;}
+
+    .form-group input,.form-group textarea{
+        border:none;
+        widows:100%;
+        display:block;
+        font-size:2.4rem;}
+
+    .form-group input:focus{
+        outline:0;}
+
+    .btn{
+        margin-top:4rem;
+        font-weight:400;
+        display: inline-block;
+        border: 1px solid #eaeaea;
+        cursor:pointer;
+        padding:1.2rem 1rem;
+        }
+	.container{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: .5rem;
+		padding-right: .5rem;
+		background-color: #767978;
+		}
+	.container-contact{
+		width: 50%;
+	}
+
+
+/*responsive site ayarları*/
+@media screen and (min-width:800px)
+
+{
+	#section-b li{
+		width: 28%;
+		margin: 1%;
+		display: inline-block;
+	}
+	.box{
+		width: 50%;
+		float: left;
+	}
+}
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
